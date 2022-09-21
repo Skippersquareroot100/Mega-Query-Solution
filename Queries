@@ -1,0 +1,12 @@
+select * from emp;
+select * from emp where deptno=10;
+select * from emp where deptno<>0;
+select count(empno)+count(ename)+count(job)+count(mgr)+count(hiredate)+count(sal)+count(comm)+count(deptno) as All_Record from emp;
+select * from emp order by sal desc;
+select * from emp
+where ROWNUM<=5;
+select * from emp where  hiredate  LIKE'%-%-81';
+select * from emp where hiredate<'01-Jan-81';
+select * from emp where  hiredate NOT LIKE'%-%-81';
+SELECT * FROM EMP WHERE HIREDATE>='01-JAN-81' AND HIREDATE<='30-APR-81';
+
